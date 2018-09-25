@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated aml_aggregator -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="edu.kit.sdq.aml_aggregator.presentation.Aml_aggregatorModelWizardID"
+            name="%_UI_Aml_aggregatorModelWizard_label"
+            class="edu.kit.sdq.aml_aggregator.presentation.Aml_aggregatorModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Aml_aggregatorModelFile.gif">
+         <description>%_UI_Aml_aggregatorModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated aml_aggregator -->
+      <editor
+            id="edu.kit.sdq.aml_aggregator.presentation.Aml_aggregatorEditorID"
+            name="%_UI_Aml_aggregatorEditor_label"
+            icon="icons/full/obj16/Aml_aggregatorModelFile.gif"
+            extensions="aml_aggregator"
+            class="edu.kit.sdq.aml_aggregator.presentation.Aml_aggregatorEditor"
+            contributorClass="edu.kit.sdq.aml_aggregator.presentation.Aml_aggregatorActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
