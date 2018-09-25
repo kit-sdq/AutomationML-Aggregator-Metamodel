@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/edu.kit.sdq.aml_aggregator/src-gen" creationIcons="false"
+    editDirectory="/edu.kit.sdq.aml_aggregator.edit/src-gen" editorDirectory="/edu.kit.sdq.aml_aggregator.editor/src-gen"
+    modelPluginID="edu.kit.sdq.aml_aggregator" modelName="Aml_aggregator" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>aml_aggregator.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Aml_aggregator" basePackage="edu.kit.sdq" disposableProviderFactory="true"
+      ecorePackage="aml_aggregator.ecore#/">
+    <genClasses ecoreClass="aml_aggregator.ecore#//AMLProject">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute aml_aggregator.ecore#//AMLProject/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference aml_aggregator.ecore#//AMLProject/caexcontainer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference aml_aggregator.ecore#//AMLProject/plcopencontainer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference aml_aggregator.ecore#//AMLProject/colladacontainer"/>
+    </genClasses>
+    <genClasses ecoreClass="aml_aggregator.ecore#//CAEXContainer"/>
+    <genClasses ecoreClass="aml_aggregator.ecore#//PLCopenContainer"/>
+    <genClasses ecoreClass="aml_aggregator.ecore#//ColladaContainer"/>
+    <genClasses ecoreClass="aml_aggregator.ecore#//ModelContainer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute aml_aggregator.ecore#//ModelContainer/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

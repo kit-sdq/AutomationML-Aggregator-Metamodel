@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated aml_aggregator -->
+      <package
+            uri="http://edu.kit.ipd.sdq.aml"
+            class="edu.kit.sdq.aml_aggregator.Aml_aggregatorPackage"
+            genModel="model/aml_aggregator.genmodel"/>
+   </extension>
+
+</plugin>
