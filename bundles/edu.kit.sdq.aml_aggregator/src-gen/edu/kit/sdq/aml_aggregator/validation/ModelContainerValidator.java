@@ -13,5 +13,7 @@ package edu.kit.sdq.aml_aggregator.validation;
 public interface ModelContainerValidator {
 	boolean validate();
 
+	boolean validatePath(String value);
+
 	boolean validateName(String value);
 }

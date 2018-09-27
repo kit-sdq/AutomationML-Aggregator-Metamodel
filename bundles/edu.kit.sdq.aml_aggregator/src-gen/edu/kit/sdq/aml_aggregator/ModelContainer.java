@@ -13,7 +13,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link edu.kit.sdq.aml_aggregator.ModelContainer#getName <em>Name</em>}</li>
+ *   <li>{@link edu.kit.sdq.aml_aggregator.ModelContainer#getPath <em>Path</em>}</li>
  * </ul>
  *
  * @see edu.kit.sdq.aml_aggregator.Aml_aggregatorPackage#getModelContainer()
@@ -22,29 +22,29 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface ModelContainer extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * Returns the value of the '<em><b>Path</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Path</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see edu.kit.sdq.aml_aggregator.Aml_aggregatorPackage#getModelContainer_Name()
+	 * @return the value of the '<em>Path</em>' attribute.
+	 * @see #setPath(String)
+	 * @see edu.kit.sdq.aml_aggregator.Aml_aggregatorPackage#getModelContainer_Path()
 	 * @model required="true"
 	 * @generated
 	 */
-	String getName();
+	String getPath();
 
 	/**
-	 * Sets the value of the '{@link edu.kit.sdq.aml_aggregator.ModelContainer#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link edu.kit.sdq.aml_aggregator.ModelContainer#getPath <em>Path</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
+	 * @param value the new value of the '<em>Path</em>' attribute.
+	 * @see #getPath()
 	 * @generated
 	 */
-	void setName(String value);
+	void setPath(String value);
 
 } // ModelContainer

@@ -53,24 +53,24 @@ public class ModelContainerItemProvider extends ItemProviderAdapter implements I
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
+			addPathPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Name feature.
+	 * This adds a property descriptor for the Path feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addNamePropertyDescriptor(Object object) {
+	protected void addPathPropertyDescriptor(Object object) {
 		itemPropertyDescriptors
 				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ModelContainer_name_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ModelContainer_name_feature",
+						getResourceLocator(), getString("_UI_ModelContainer_path_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_ModelContainer_path_feature",
 								"_UI_ModelContainer_type"),
-						Aml_aggregatorPackage.Literals.MODEL_CONTAINER__NAME, true, false, false,
+						Aml_aggregatorPackage.Literals.MODEL_CONTAINER__PATH, true, false, false,
 						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
@@ -103,7 +103,7 @@ public class ModelContainerItemProvider extends ItemProviderAdapter implements I
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((ModelContainer) object).getName();
+		String label = ((ModelContainer) object).getPath();
 		return label == null || label.length() == 0 ? getString("_UI_ModelContainer_type")
 				: getString("_UI_ModelContainer_type") + " " + label;
 	}
@@ -120,7 +120,7 @@ public class ModelContainerItemProvider extends ItemProviderAdapter implements I
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(ModelContainer.class)) {
-		case Aml_aggregatorPackage.MODEL_CONTAINER__NAME:
+		case Aml_aggregatorPackage.MODEL_CONTAINER__PATH:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		}

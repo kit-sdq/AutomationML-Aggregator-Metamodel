@@ -73,7 +73,7 @@ public class PLCopenContainerItemProvider extends ModelContainerItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((PLCopenContainer) object).getName();
+		String label = ((PLCopenContainer) object).getPath();
 		return label == null || label.length() == 0 ? getString("_UI_PLCopenContainer_type")
 				: getString("_UI_PLCopenContainer_type") + " " + label;
 	}

@@ -20,7 +20,7 @@
     <genClasses ecoreClass="aml_aggregator.ecore#//PLCopenContainer"/>
     <genClasses ecoreClass="aml_aggregator.ecore#//ColladaContainer"/>
     <genClasses ecoreClass="aml_aggregator.ecore#//ModelContainer">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute aml_aggregator.ecore#//ModelContainer/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute aml_aggregator.ecore#//ModelContainer/path"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

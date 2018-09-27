@@ -73,7 +73,7 @@ public class CAEXContainerItemProvider extends ModelContainerItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((CAEXContainer) object).getName();
+		String label = ((CAEXContainer) object).getPath();
 		return label == null || label.length() == 0 ? getString("_UI_CAEXContainer_type")
 				: getString("_UI_CAEXContainer_type") + " " + label;
 	}

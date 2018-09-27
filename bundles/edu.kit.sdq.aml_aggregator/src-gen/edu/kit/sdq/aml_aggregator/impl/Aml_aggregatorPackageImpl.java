@@ -208,7 +208,7 @@ public class Aml_aggregatorPackageImpl extends EPackageImpl implements Aml_aggre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getModelContainer_Name() {
+	public EAttribute getModelContainer_Path() {
 		return (EAttribute) modelContainerEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -254,7 +254,7 @@ public class Aml_aggregatorPackageImpl extends EPackageImpl implements Aml_aggre
 		colladaContainerEClass = createEClass(COLLADA_CONTAINER);
 
 		modelContainerEClass = createEClass(MODEL_CONTAINER);
-		createEAttribute(modelContainerEClass, MODEL_CONTAINER__NAME);
+		createEAttribute(modelContainerEClass, MODEL_CONTAINER__PATH);
 	}
 
 	/**
@@ -316,7 +316,7 @@ public class Aml_aggregatorPackageImpl extends EPackageImpl implements Aml_aggre
 
 		initEClass(modelContainerEClass, ModelContainer.class, "ModelContainer", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getModelContainer_Name(), ecorePackage.getEString(), "name", null, 1, 1, ModelContainer.class,
+		initEAttribute(getModelContainer_Path(), ecorePackage.getEString(), "path", null, 1, 1, ModelContainer.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource

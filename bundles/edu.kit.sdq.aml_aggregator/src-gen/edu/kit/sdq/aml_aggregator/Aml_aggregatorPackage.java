@@ -131,13 +131,13 @@ public interface Aml_aggregatorPackage extends EPackage {
 	int MODEL_CONTAINER = 4;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Path</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_CONTAINER__NAME = 0;
+	int MODEL_CONTAINER__PATH = 0;
 
 	/**
 	 * The number of structural features of the '<em>Model Container</em>' class.
@@ -168,13 +168,13 @@ public interface Aml_aggregatorPackage extends EPackage {
 	int CAEX_CONTAINER = 1;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Path</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CAEX_CONTAINER__NAME = MODEL_CONTAINER__NAME;
+	int CAEX_CONTAINER__PATH = MODEL_CONTAINER__PATH;
 
 	/**
 	 * The number of structural features of the '<em>CAEX Container</em>' class.
@@ -205,13 +205,13 @@ public interface Aml_aggregatorPackage extends EPackage {
 	int PL_COPEN_CONTAINER = 2;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Path</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PL_COPEN_CONTAINER__NAME = MODEL_CONTAINER__NAME;
+	int PL_COPEN_CONTAINER__PATH = MODEL_CONTAINER__PATH;
 
 	/**
 	 * The number of structural features of the '<em>PL Copen Container</em>' class.
@@ -242,13 +242,13 @@ public interface Aml_aggregatorPackage extends EPackage {
 	int COLLADA_CONTAINER = 3;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Path</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COLLADA_CONTAINER__NAME = MODEL_CONTAINER__NAME;
+	int COLLADA_CONTAINER__PATH = MODEL_CONTAINER__PATH;
 
 	/**
 	 * The number of structural features of the '<em>Collada Container</em>' class.
@@ -363,15 +363,15 @@ public interface Aml_aggregatorPackage extends EPackage {
 	EClass getModelContainer();
 
 	/**
-	 * Returns the meta object for the attribute '{@link edu.kit.sdq.aml_aggregator.ModelContainer#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link edu.kit.sdq.aml_aggregator.ModelContainer#getPath <em>Path</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see edu.kit.sdq.aml_aggregator.ModelContainer#getName()
+	 * @return the meta object for the attribute '<em>Path</em>'.
+	 * @see edu.kit.sdq.aml_aggregator.ModelContainer#getPath()
 	 * @see #getModelContainer()
 	 * @generated
 	 */
-	EAttribute getModelContainer_Name();
+	EAttribute getModelContainer_Path();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -479,12 +479,12 @@ public interface Aml_aggregatorPackage extends EPackage {
 		EClass MODEL_CONTAINER = eINSTANCE.getModelContainer();
 
 		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Path</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute MODEL_CONTAINER__NAME = eINSTANCE.getModelContainer_Name();
+		EAttribute MODEL_CONTAINER__PATH = eINSTANCE.getModelContainer_Path();
 
 	}
 

@@ -73,7 +73,7 @@ public class ColladaContainerItemProvider extends ModelContainerItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((ColladaContainer) object).getName();
+		String label = ((ColladaContainer) object).getPath();
 		return label == null || label.length() == 0 ? getString("_UI_ColladaContainer_type")
 				: getString("_UI_ColladaContainer_type") + " " + label;
 	}

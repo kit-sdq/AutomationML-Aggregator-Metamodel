@@ -258,9 +258,9 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@conditionnalStyles.1/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_xiBS0MC5Eeip6c0USgTZrw" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="aml_aggregator.ecore#//ModelContainer/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="aml_aggregator.ecore#//ModelContainer/name"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_xiBS0MC5Eeip6c0USgTZrw" name="path : EString" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="aml_aggregator.ecore#//ModelContainer/path"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="aml_aggregator.ecore#//ModelContainer/path"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_1hHlocC5Eeip6c0USgTZrw" labelAlignment="LEFT" description="_1hHloMC5Eeip6c0USgTZrw">
           <labelFormat>bold</labelFormat>
         </ownedStyle>

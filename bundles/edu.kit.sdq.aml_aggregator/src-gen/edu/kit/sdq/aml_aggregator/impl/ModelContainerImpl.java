@@ -20,31 +20,31 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link edu.kit.sdq.aml_aggregator.impl.ModelContainerImpl#getName <em>Name</em>}</li>
+ *   <li>{@link edu.kit.sdq.aml_aggregator.impl.ModelContainerImpl#getPath <em>Path</em>}</li>
  * </ul>
  *
  * @generated
  */
 public abstract class ModelContainerImpl extends MinimalEObjectImpl.Container implements ModelContainer {
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The default value of the '{@link #getPath() <em>Path</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getPath()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = null;
+	protected static final String PATH_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The cached value of the '{@link #getPath() <em>Path</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getPath()
 	 * @generated
 	 * @ordered
 	 */
-	protected String name = NAME_EDEFAULT;
+	protected String path = PATH_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -70,8 +70,8 @@ public abstract class ModelContainerImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
+	public String getPath() {
+		return path;
 	}
 
 	/**
@@ -79,12 +79,12 @@ public abstract class ModelContainerImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
+	public void setPath(String newPath) {
+		String oldPath = path;
+		path = newPath;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Aml_aggregatorPackage.MODEL_CONTAINER__NAME, oldName,
-					name));
+			eNotify(new ENotificationImpl(this, Notification.SET, Aml_aggregatorPackage.MODEL_CONTAINER__PATH, oldPath,
+					path));
 	}
 
 	/**
@@ -95,8 +95,8 @@ public abstract class ModelContainerImpl extends MinimalEObjectImpl.Container im
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case Aml_aggregatorPackage.MODEL_CONTAINER__NAME:
-			return getName();
+		case Aml_aggregatorPackage.MODEL_CONTAINER__PATH:
+			return getPath();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -109,8 +109,8 @@ public abstract class ModelContainerImpl extends MinimalEObjectImpl.Container im
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case Aml_aggregatorPackage.MODEL_CONTAINER__NAME:
-			setName((String) newValue);
+		case Aml_aggregatorPackage.MODEL_CONTAINER__PATH:
+			setPath((String) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -124,8 +124,8 @@ public abstract class ModelContainerImpl extends MinimalEObjectImpl.Container im
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case Aml_aggregatorPackage.MODEL_CONTAINER__NAME:
-			setName(NAME_EDEFAULT);
+		case Aml_aggregatorPackage.MODEL_CONTAINER__PATH:
+			setPath(PATH_EDEFAULT);
 			return;
 		}
 		super.eUnset(featureID);
@@ -139,8 +139,8 @@ public abstract class ModelContainerImpl extends MinimalEObjectImpl.Container im
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case Aml_aggregatorPackage.MODEL_CONTAINER__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+		case Aml_aggregatorPackage.MODEL_CONTAINER__PATH:
+			return PATH_EDEFAULT == null ? path != null : !PATH_EDEFAULT.equals(path);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -156,8 +156,8 @@ public abstract class ModelContainerImpl extends MinimalEObjectImpl.Container im
 			return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
+		result.append(" (path: ");
+		result.append(path);
 		result.append(')');
 		return result.toString();
 	}

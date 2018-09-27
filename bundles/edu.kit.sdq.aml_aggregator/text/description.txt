@@ -20,4 +20,4 @@ Package aml_aggregator <http://edu.kit.ipd.sdq.aml>
   Class ColladaContainer -> ModelContainer
 
   Class ModelContainer
-    Attribute name : EString<<1..1>>
+    Attribute path : EString<<1..1>>
