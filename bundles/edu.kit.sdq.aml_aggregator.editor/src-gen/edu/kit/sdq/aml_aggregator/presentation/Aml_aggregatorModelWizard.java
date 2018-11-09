@@ -187,6 +187,8 @@ public class Aml_aggregatorModelWizard extends Wizard implements INewWizard {
 	protected Collection<String> getInitialObjectNames() {
 		if (initialObjectNames == null) {
 			initialObjectNames = new ArrayList<String>();
+			initialObjectNames.add(aml_aggregatorPackage.getAMLProject().getName());
+			/*
 			for (EClassifier eClassifier : aml_aggregatorPackage.getEClassifiers()) {
 				if (eClassifier instanceof EClass) {
 					EClass eClass = (EClass) eClassifier;
@@ -196,6 +198,7 @@ public class Aml_aggregatorModelWizard extends Wizard implements INewWizard {
 				}
 			}
 			Collections.sort(initialObjectNames, CommonPlugin.INSTANCE.getComparator());
+			*/
 		}
 		return initialObjectNames;
 	}
